@@ -164,6 +164,13 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
 .cine .hero-text p.sub{color:rgba(255,255,255,.85)}
 .cine .tag{border-color:rgba(255,255,255,.45);color:#fff;background:rgba(255,255,255,.1);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 .cine .intake{background:rgba(255,255,255,.96);color:var(--ink);border-color:rgba(255,255,255,.6)}
+
+/* ===== mobile: keep the photo to the first screen and fade it into dark ===== */
+@media(max-width:899px){
+  .cine{align-items:flex-start}
+  .cine-bg{bottom:auto;height:100vh;height:100svh;background-position:42% center}
+  .cine-bg::after{background:linear-gradient(180deg,rgba(10,10,10,.5) 0%,rgba(10,10,10,.3) 40%,#0A0A0A 100%)}
+}
 </style>
 </head>
 <body>
